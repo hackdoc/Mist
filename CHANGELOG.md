@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.20.2](https://github.com/perez987/Mist/releases/tag/0.20.2) - 2025-08-10
+
+- Updated to macOS 26 Tahoe
+- Fixed a minor cosmetic bug where line under title overlaps Mist icon
+- Thanks to [pyquick](https://github.com/pyquick) and [hackdoc](https://github.com/hackdoc)
+
 ## [0.20.1](https://github.com/ninxsoft/Mist/releases/tag/v0.20.1) - 2024-10-05
 
 - Fixed a bug that resulted in macOS installers being created that were only **~500MB** in size
