@@ -1,5 +1,7 @@
 <!-- markdownlint-disable-next-line first-line-heading no-inline-html  -->
 <img align="left" width="128" height="128" src="README%20Resources/App%20Icon.png" alt="App Icon">
+<br/>
+<br/>
 
 # MIST - macOS Installer Super Tool
 
