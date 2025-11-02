@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: swift-actions/setup-swift@v2
+        with:
+          swift-version: 5.10.1
       - name: Install Apple Developer ID Application Certificate
         env:
           APPLE_DEVELOPER_ID_APPLICATION_CERTIFICATE: ${{ secrets.APPLE_DEVELOPER_ID_APPLICATION_CERTIFICATE }}
@@ -35,7 +37,7 @@ jobs:
           fi
           security list-keychain -d user -s "$KEYCHAIN_PATH"
       - name: Select Xcode version
-        run: sudo xcode-select --switch "/Applications/Xcode_26.app"
+        run: sudo xcode-select --switch "/Applications/Xcode_26.0.app"
       - name: Archive Mist
         run: |
           xcodebuild -scheme "Mist" -configuration "release" -destination "platform=macOS,arch=arm64" -quiet clean
